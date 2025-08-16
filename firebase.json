@@ -1,16 +1,13 @@
 {
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "type": "service_account",
+  "project_id": "jd-live-score-8b0d1",
+  "private_key_id": "17375581b0e7cc71378fc2a2e2bba120cc768619",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjE/OWTZgZDVMT\nlFUNe4laRmzpdOEKBGCqcpgZb5wwFS5k10BQHq9x+tH/F9MuFrRq/zvIPMRsm/rD\neZN8+Ies8shuc15mbiKwE2I+EXWeOIC9q2aaHMolg3vAXJr0Pewq5G0nvVNv4z2M\nLmLmaC9q+2lp7XQ4E6EBSqJWrE+grxPVPuLUU7Q2kwl1uSwx1GrAfYiQdlr0YEb9\n1SrHzbAENgmm1VSSV9oYJ2yAQHfCVlhYPeYcMzA0uASxBkGfNOpOqOmbUQUG8YK8\nZ59uCGDfScnWekGNA4W66AIXWKZtxWmTU6A322Pz0bgZXroPU+a9kl/vkfCgXWPG\n8B/g3bKXAgMBAAECggEAQSio9YCne8zQgWZHb5p6w85Ak07oAj1WVaKTVX0qxrtV\nODdx62uasWylFHtMLEX0mF1L1L3nKTkq4CuDMFGKcQyridIODPtedcLiJmhRJUkW\nXBaSVvea49/SQ1TvW9Vm7rnkPop7pjgBIbfvxiiwLpUc3vn1pt+vDBVT9uXz5Wm9\nM7Iwd+mWuq2TaFyLNH+2BslWQANrc5mMscnOFo32EdQ2aJctkjZI/Uow6NhWOqm2\nyXkqr/tLQrUSLMTOM1vNbIQu4Exn2mb34mxV8Q805ganq1yBCdX5zZbQTVbm/4SK\n0LSCVdT6X5peis9rGsJu4RC7qx1PPgT4whp77KBWLQKBgQD2BcpdM2m95fLu+zM5\nifRb68U3kWphGIpuyw96gJ+wHCTMGuAurTqcK1jb9uSbddoum6AaTru4Ejf5IY6+\n//CPLiF6vvjYWK+wAgrPSNxGMU8FombdZ88dITKcGfHEiDUel9Tnve4CsqBAyoV/\npegi8D5XDF3E4BhM0R9IcYUrOwKBgQDsSXokVbU5K/fYWOnOL5P0MnKXBFjEhAm7\nwY80PqhBs4DpaD4cmUjlazjPyEEoVZtE/o1BCvo53KWsVuJvLHYfE1th+eo4TxBG\nTB8EvZhv9k4OHX1GV324P9qopN3gThq7o/qqsftDLPDGYHwaP6Kd4EvnkJtjDK8L\nAcdB8R2IVQKBgDpXEy7Yw0mB3wLm1LXfTfACT+kmdZiCzkkJpCkDmVqUwfEYqnLH\nJ2/jI5Y9zOZEozGMPAIhC4jR4S4V1Bjc7nm1kcDeynnbRgYx5chT2dBXXwrSARyd\nwlKBDdRQnrFhL1+K17UAqBFBtJjIrbGgcRTf7ZiM2SuXjIuix41RRigDAoGABuAg\neLwxuMcpwBbePsytnnZ1VSWgO5+n9NmuBBQqqzbA8onA/O4M6/gRwCIQm07aZMiP\nbawXGeXswDYLArclfMQAbbpq8VaDn7gJUwb9T4y4Orrq8UgMdXcOMsgRWLyNFJax\n7ZOePxcorm0ST2U4oyVqsANKMjilQ0m69ZVBib0CgYEAn9Jj8rYlwQ6di54mmgmD\neQPSa6toy+dohXJeup0ywSEXAE/CK+52JoChCyK0XAFiur1k25/Kf0CdxEvWguJJ\nIpCy+cBi30SK6L7eHIrQNwrJ2FB6zrXLc719UyQm1mzry+0nWWo968qHxb59Djok\nf3wGmV4f3+NxW/b1uCrmyF4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@jd-live-score-8b0d1.iam.gserviceaccount.com",
+  "client_id": "109935160265010066250",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40jd-live-score-8b0d1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
 }
