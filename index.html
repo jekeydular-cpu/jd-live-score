@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Live Cricket Score</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+    <h1>JD Live Cricket Score</h1>
+    <div id="match">
+        <p>Runs: <span id="runs">0</span></p>
+        <p>Wickets: <span id="wickets">0</span></p>
+        <p>Overs: <span id="overs">0</span></p>
+    </div>
+    <button onclick="addRun()">+1 Run</button>
+    <button onclick="addWicket()">Wicket</button>
+    <button onclick="nextBall()">Next Ball</button>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC2mC9buqUIafhSD998zVwiyNajAmkQUwY",
+            authDomain: "jd-live-score-8b0d1.firebaseapp.com",
+            databaseURL: "https://jd-live-score-8b0d1-default-rtdb.firebaseio.com",
+            projectId: "jd-live-score-8b0d1",
+            storageBucket: "jd-live-score-8b0d1.appspot.com",
+            messagingSenderId: "432865748395",
+            appId: "1:432865748395:web:607866e9db0de0ea02deee"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        let runs = 0, wickets = 0, balls = 0;
+        const updateDB = () => { db.ref('match').set({ runs, wickets, balls }); };
+
+        db.ref('match').on('value', snapshot => {
+            const data = snapshot.val();
+            if(data){
+                runs = data.runs;
+                wickets = data.wickets;
+                balls = data.balls;
+                document.getElementById('runs').innerText = runs;
+                document.getElementById('wickets').innerText = wickets;
+                document.getElementById('overs').innerText = (balls/6).toFixed(1);
+            }
+        });
+
+        function addRun(){ runs++; updateDB(); }
+        function addWicket(){ wickets++; updateDB(); }
+        function nextBall(){ balls++; updateDB(); }
+
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('service-worker.js')
+            .then(()=>console.log('Service Worker registered'))
+            .catch(err=>console.log('Service Worker error',err));
+        }
+    </script>
+</body>
+</html>
